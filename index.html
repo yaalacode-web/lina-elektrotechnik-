@@ -1,67 +1,39 @@
 <!DOCTYPE html>
-<html lang="de" data-lang="de">
+<html lang="de" data-lang="de" data-theme="night">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Lina Elektrotechnik | Meisterbetrieb in Winsen (Luhe)</title>
-  <meta name="description" content="Lina Elektrotechnik – Ihr zuverlässiger Meisterbetrieb in Winsen (Luhe). Elektroinstallationen, Photovoltaik, Wärmepumpen, E-Ladestationen, KNX Smart Home, Schaltschrankbau, Wartung und Service." />
-  <meta name="keywords" content="Elektriker Winsen Luhe, Elektrotechnik Winsen, KNX Smart Home, Photovoltaik, Wärmepumpe, E-Ladestation, Schaltschrankbau, Elektroinstallationen Hamburg Umgebung" />
-  <meta name="author" content="Lina Elektrotechnik" />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Lina Elektrotechnik – Ihr zuverlässiger Meisterbetrieb aus Winsen (Luhe)." />
   <meta name="theme-color" content="#0b1220" />
-
-  <meta property="og:title" content="Lina Elektrotechnik | Meisterbetrieb in Winsen (Luhe)" />
-  <meta property="og:description" content="Professionelle Elektrotechnik, Smart Home, Photovoltaik, Wärmepumpen, E-Ladestationen und Service." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="li.png" />
-  <meta property="og:locale" content="de_DE" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Lina Elektrotechnik | Meisterbetrieb in Winsen (Luhe)" />
-  <meta name="twitter:description" content="Elektroinstallationen, Photovoltaik, Smart Home, Wärmepumpen und Service." />
-  <meta name="twitter:image" content="li.png" />
-
-  <link rel="icon" type="image/png" href="li.png" />
-  <link rel="canonical" href="https://YOUR-USERNAME.github.io/lina-elektrotechnik/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Electrician",
-    "name": "Lina Elektrotechnik",
-    "image": "li.png",
-    "description": "Meisterbetrieb für Elektroinstallationen, Photovoltaik, Wärmepumpen, E-Ladestationen, KNX Smart Home und Service in Winsen (Luhe).",
-    "telephone": "+4915736582225",
-    "areaServed": ["Winsen (Luhe)", "Hamburg", "Niedersachsen"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Winsen (Luhe)",
-      "addressCountry": "DE"
-    },
-    "url": "https://YOUR-USERNAME.github.io/lina-elektrotechnik/"
-  }
-  </script>
 </head>
 <body>
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
-        <span class="badge">Meisterbetrieb</span>
-        <span class="muted">Zuverlässig – Fachgerecht – Termintreu</span>
+        <span class="badge" data-i18n="badge">Meisterbetrieb</span>
+        <span class="muted" data-i18n="topbar_text">Zuverlässig – Fachgerecht – Termintreu</span>
       </div>
 
       <div class="topbar-right">
-        <a class="top-link" href="#contact">Angebot anfragen</a>
-        <div class="lang-switch" role="group" aria-label="Language switch">
-          <button class="lang-btn is-active" data-lang-btn="de" aria-pressed="true">DE</button>
-          <button class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+        <a class="top-link" href="#contact" data-i18n="topbar_cta">Angebot anfragen</a>
+
+        <div class="controls">
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button class="lang-btn is-active" data-lang-btn="de" aria-pressed="true">DE</button>
+            <button class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+          </div>
+
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon" id="themeIcon">🌙</span>
+            <span class="theme-label" id="themeLabel">Night</span>
+          </button>
         </div>
       </div>
     </div>
@@ -73,16 +45,16 @@
         <img src="li.png" alt="Lina Elektrotechnik Logo" class="logo-img" />
         <span class="brand-text">
           <span class="brand-title">Lina Elektrotechnik</span>
-          <span class="brand-sub">Meisterbetrieb • Winsen (Luhe)</span>
+          <span class="brand-sub" data-i18n="brand_sub">Meisterbetrieb • Winsen (Luhe)</span>
         </span>
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <a href="#services">Leistungen</a>
-        <a href="#about">Über uns</a>
-        <a href="#projects">Einsatzbereiche</a>
-        <a href="#map">Standort</a>
-        <a href="#contact" class="nav-cta">Kontakt</a>
+        <a href="#services" data-i18n="nav_services">Leistungen</a>
+        <a href="#about" data-i18n="nav_about">Über uns</a>
+        <a href="#projects" data-i18n="nav_projects">Einsatzbereiche</a>
+        <a href="#location" data-i18n="nav_location">Standort</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav_contact">Kontakt</a>
       </nav>
 
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
@@ -92,11 +64,11 @@
 
     <div class="mobile-nav" id="mobileNav" aria-hidden="true">
       <div class="mobile-nav-inner">
-        <a href="#services">Leistungen</a>
-        <a href="#about">Über uns</a>
-        <a href="#projects">Einsatzbereiche</a>
-        <a href="#map">Standort</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#services" data-i18n="nav_services">Leistungen</a>
+        <a href="#about" data-i18n="nav_about">Über uns</a>
+        <a href="#projects" data-i18n="nav_projects">Einsatzbereiche</a>
+        <a href="#location" data-i18n="nav_location">Standort</a>
+        <a href="#contact" data-i18n="nav_contact">Kontakt</a>
       </div>
     </div>
   </header>
@@ -105,69 +77,105 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <span class="eyebrow">Elektriker • Smart Home • Energie</span>
+          <span class="eyebrow" data-i18n="eyebrow">Elektriker • Smart Home • Energie</span>
 
-          <h1>
-            Moderne Elektrotechnik für Haus, Gewerbe und Zukunft
+          <h1 data-i18n="hero_title">
+            Moderne Elektrotechnik & Smart Home – zuverlässig vom Meister
           </h1>
 
-          <p class="lead">
-            Lina Elektrotechnik steht für saubere Ausführung, moderne Systeme und zuverlässigen Service.
-            Von Elektroinstallationen über KNX Smart Home bis zu Photovoltaik, Wärmepumpen und E-Ladestationen.
+          <p class="lead" data-i18n="hero_lead">
+            Planung, Montage und Anschluss für Privat- und Gewerbekunden: Elektroinstallationen,
+            Photovoltaik, Wärmepumpen, E-Ladestationen, KNX-Smart-Home, Schaltschrankbau und Service.
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary" href="#contact">Jetzt Kontakt aufnehmen</a>
-            <a class="btn ghost" href="#services">Leistungen ansehen</a>
+            <a class="btn primary" href="#contact" data-i18n="hero_btn_primary">Jetzt Kontakt aufnehmen</a>
+            <a class="btn ghost" href="#services" data-i18n="hero_btn_secondary">Leistungen ansehen</a>
           </div>
 
           <div class="hero-proof">
             <div class="proof-card">
               <div class="proof-num">✅</div>
               <div class="proof-text">
-                <strong>Fachgerecht</strong>
-                <span class="muted">Saubere Ausführung nach Norm</span>
+                <strong data-i18n="proof_1_title">Fachgerecht</strong>
+                <span class="muted" data-i18n="proof_1_sub">Saubere Ausführung & Normen</span>
               </div>
             </div>
 
             <div class="proof-card">
               <div class="proof-num">⏱️</div>
               <div class="proof-text">
-                <strong>Termintreu</strong>
-                <span class="muted">Planbar und zuverlässig</span>
+                <strong data-i18n="proof_2_title">Termintreu</strong>
+                <span class="muted" data-i18n="proof_2_sub">Planbar & zuverlässig</span>
               </div>
             </div>
 
             <div class="proof-card">
               <div class="proof-num">📍</div>
               <div class="proof-text">
-                <strong>Winsen (Luhe)</strong>
-                <span class="muted">Hamburg & Umgebung</span>
+                <strong data-i18n="proof_3_title">Winsen (Luhe)</strong>
+                <span class="muted" data-i18n="proof_3_sub">Region Hamburg & Umgebung</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-image-card">
-            <img src="hero-electrician.jpg" alt="Professioneller Elektriker bei der Arbeit" class="hero-image" />
-            <div class="hero-overlay-card">
-              <div class="overlay-pill">⚡ Elektroinstallationen</div>
-              <div class="overlay-pill">🏠 KNX Smart Home</div>
-              <div class="overlay-pill">☀️ Photovoltaik</div>
-              <div class="overlay-pill">🔌 E-Ladestation</div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-card-top">
+              <span class="pill" data-i18n="pill_1">⚡ Elektroinstallationen</span>
+              <span class="pill" data-i18n="pill_2">🏠 KNX Smart Home</span>
+              <span class="pill" data-i18n="pill_3">☀️ Photovoltaik</span>
+              <span class="pill" data-i18n="pill_4">🔌 E-Ladestation</span>
+              <span class="pill" data-i18n="pill_5">🌬️ Lüftung/Klima</span>
+              <span class="pill" data-i18n="pill_6">🧰 Schaltschrankbau</span>
+            </div>
+
+            <div class="hero-image-wrap">
+              <img src="hero-electrician.jpg" alt="Electrician at work" class="hero-image" />
+            </div>
+
+            <div class="hero-card-mid">
+              <h3 data-i18n="quick_title">Schnellanfrage</h3>
+              <p class="muted" data-i18n="quick_sub">
+                Beschreiben Sie kurz Ihr Projekt – wir melden uns schnell zurück.
+              </p>
+
+              <form class="mini-form" id="miniForm">
+                <label class="field">
+                  <span data-i18n="form_name">Name</span>
+                  <input type="text" name="name" placeholder="Max Mustermann" required />
+                </label>
+
+                <label class="field">
+                  <span data-i18n="form_phone">Telefon</span>
+                  <input type="tel" name="phone" placeholder="+49 ..." />
+                </label>
+
+                <label class="field">
+                  <span data-i18n="form_message">Nachricht</span>
+                  <textarea name="message" rows="4" placeholder="Kurze Beschreibung..." required></textarea>
+                </label>
+
+                <button class="btn primary full" type="submit" data-i18n="form_send">
+                  Anfrage per E-Mail öffnen
+                </button>
+
+              
+              </form>
             </div>
           </div>
         </div>
       </div>
+
       <div class="hero-glow" aria-hidden="true"></div>
     </section>
 
     <section class="section" id="services">
       <div class="container">
         <div class="section-head">
-          <h2>Leistungsspektrum</h2>
-          <p class="muted">
+          <h2 data-i18n="services_title">Leistungsspektrum</h2>
+          <p class="muted" data-i18n="services_sub">
             Professionelle Dienstleistungen rund um moderne Elektrotechnik und Smart-Home-Lösungen.
           </p>
         </div>
@@ -175,44 +183,44 @@
         <div class="cards">
           <article class="card">
             <div class="card-icon">1</div>
-            <h3>Elektroinstallationen</h3>
-            <p class="muted">In privaten und gewerblichen Gebäuden – sicher, sauber und nach Norm.</p>
+            <h3 data-i18n="s1_title">Elektroinstallationen</h3>
+            <p class="muted" data-i18n="s1_text">In privaten und gewerblichen Gebäuden – sauber, sicher und nach Norm.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">2</div>
-            <h3>Photovoltaik, Wärmepumpen & E-Ladestationen</h3>
-            <p class="muted">Planung, Montage und Anschluss für effiziente Energielösungen.</p>
+            <h3 data-i18n="s2_title">Photovoltaik, Wärmepumpen & E-Ladestationen</h3>
+            <p class="muted" data-i18n="s2_text">Planung, Montage & Anschluss – für moderne, effiziente Energieversorgung.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">3</div>
-            <h3>KNX Smart Home</h3>
-            <p class="muted">Planung, Montage und Programmierung für Licht, Heizung, Beschattung und Sicherheit.</p>
+            <h3 data-i18n="s3_title">KNX – Smart Home System</h3>
+            <p class="muted" data-i18n="s3_text">Planung, Montage & Programmierung für Licht, Beschattung, Heizung und Sicherheit.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">4</div>
-            <h3>Zählerschränke & Unterverteilungen</h3>
-            <p class="muted">Erneuerung und Verkauf für Ein- und Mehrfamilienhäuser.</p>
+            <h3 data-i18n="s4_title">Zählerschränke & Unterverteilungen</h3>
+            <p class="muted" data-i18n="s4_text">Erneuerung und Verkauf – für Ein- und Mehrfamilienhäuser.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">5</div>
-            <h3>Schaltschrankbau</h3>
-            <p class="muted">Individuelle Lösungen für Lüftungs- und Heizungsanlagen.</p>
+            <h3 data-i18n="s5_title">Schaltschrankbau</h3>
+            <p class="muted" data-i18n="s5_text">Für Lüftungs- und Heizungsanlagen – individuell nach Bedarf gefertigt.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">6</div>
-            <h3>Verkabelung Lüftung & Heizung</h3>
-            <p class="muted">Für Schulen, Kitas, Hotels, Sporthallen, Restaurants und weitere Objekte.</p>
+            <h3 data-i18n="s6_title">Verkabelung Lüftung & Heizung</h3>
+            <p class="muted" data-i18n="s6_text">Komplette Verkabelung in öffentlichen und gewerblichen Gebäuden.</p>
           </article>
 
           <article class="card">
             <div class="card-icon">7</div>
-            <h3>Wartung & Service</h3>
-            <p class="muted">Wartung und Service für Lüftungs- und Klimaanlagen im öffentlichen und gewerblichen Bereich.</p>
+            <h3 data-i18n="s7_title">Wartung & Service</h3>
+            <p class="muted" data-i18n="s7_text">Wartung und Service von Lüftungs- und Klimaanlagen.</p>
           </article>
         </div>
       </div>
@@ -221,40 +229,34 @@
     <section class="section alt" id="about">
       <div class="container about-grid">
         <div>
-          <h2>Über Lina Elektrotechnik</h2>
-          <p class="muted">
-            Lina Elektrotechnik bietet zuverlässige, fachgerechte Lösungen von der Planung bis zur sauberen Ausführung.
-            Ob Neubau, Sanierung oder Modernisierung – wir arbeiten strukturiert, transparent und termintreu.
+          <h2 data-i18n="about_title">Über Lina Elektrotechnik</h2>
+          <p class="muted" data-i18n="about_text">
+            Lina Elektrotechnik bietet zuverlässige, fachgerechte Lösungen – von der Planung bis zur sauberen Ausführung.
           </p>
 
           <div class="ticks">
-            <div class="tick">✅ <span>Klare Kommunikation und saubere Dokumentation</span></div>
-            <div class="tick">✅ <span>Sicherheit, Qualität und Normen im Fokus</span></div>
-            <div class="tick">✅ <span>Smart Home und Energie-Lösungen aus einer Hand</span></div>
+            <div class="tick">✅ <span data-i18n="about_tick_1">Klare Kommunikation & saubere Dokumentation</span></div>
+            <div class="tick">✅ <span data-i18n="about_tick_2">Sicherheit, Qualität und Normen im Fokus</span></div>
+            <div class="tick">✅ <span data-i18n="about_tick_3">Smart-Home & Energie-Lösungen aus einer Hand</span></div>
           </div>
         </div>
 
         <aside class="info-box">
-          <h3>Kurzinfos</h3>
+          <h3 data-i18n="info_title">Kurzinfos</h3>
 
           <div class="info-row">
-            <span class="info-label">Ansprechpartner</span>
+            <span class="info-label" data-i18n="info_location_label">Standort</span>
+            <span class="info-value" data-i18n="info_location_value">Winsen (Luhe)</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-label" data-i18n="info_contact_label">Kontakt</span>
+            <span class="info-value"><a class="link" href="#contact" data-i18n="info_contact_value">Zum Kontaktformular</a></span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-label" data-i18n="info_person_label">Ansprechpartner</span>
             <span class="info-value">Babiker Ibrahim</span>
-          </div>
-
-          <div class="info-row">
-            <span class="info-label">Telefon</span>
-            <span class="info-value"><a class="link" href="tel:+4915736582225">+49 157 36582225</a></span>
-          </div>
-
-          <div class="info-row">
-            <span class="info-label">Standort</span>
-            <span class="info-value">Winsen (Luhe)</span>
-          </div>
-
-          <div class="info-row">
-            <span class="info-label">WhatsApp</span>
-            <span class="info-value"><a class="link" target="_blank" href="https://wa.me/4915736582225">Direkt schreiben</a></span>
           </div>
         </aside>
       </div>
@@ -263,50 +265,72 @@
     <section class="section" id="projects">
       <div class="container">
         <div class="section-head">
-          <h2>Einsatzbereiche</h2>
-          <p class="muted">Privat, öffentlich und gewerblich – wir unterstützen je nach Bedarf.</p>
+          <h2 data-i18n="areas_title">Einsatzbereiche</h2>
+          <p class="muted" data-i18n="areas_sub">Privat, öffentlich und gewerblich – wir unterstützen je nach Bedarf.</p>
         </div>
 
         <div class="areas">
           <div class="area">
             <div class="area-ico">🏡</div>
-            <h3>Privat</h3>
-            <p class="muted">Einfamilienhäuser, Mehrfamilienhäuser, Sanierung, Zählerschrank, Smart Home.</p>
+            <h3 data-i18n="a1_title">Privat</h3>
+            <p class="muted" data-i18n="a1_text">Einfamilienhäuser, Mehrfamilienhäuser, Modernisierung, Zählerschrank, Smart Home.</p>
           </div>
 
           <div class="area">
             <div class="area-ico">🏫</div>
-            <h3>Öffentlich</h3>
-            <p class="muted">Schulen, Kindergärten, Sporthallen – Verkabelung und Technik für Lüftung und Heizung.</p>
+            <h3 data-i18n="a2_title">Öffentlich</h3>
+            <p class="muted" data-i18n="a2_text">Schulen, Kindergärten, Sporthallen – Verkabelung & Technik für Lüftung/Heizung.</p>
           </div>
 
           <div class="area">
             <div class="area-ico">🏨</div>
-            <h3>Gewerblich</h3>
-            <p class="muted">Hotels, Restaurants, Bürogebäude – Wartung, Service, Umbau und Erweiterung.</p>
+            <h3 data-i18n="a3_title">Gewerblich</h3>
+            <p class="muted" data-i18n="a3_text">Hotels, Restaurants, Bürogebäude – Service, Wartung und Erweiterungen.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="map">
+    <section class="section alt" id="location">
       <div class="container">
         <div class="section-head">
-          <h2>Standort</h2>
-          <p class="muted">Ihr Elektriker in Winsen (Luhe) und Umgebung.</p>
+          <h2 data-i18n="location_title">Standort</h2>
+          <p class="muted" data-i18n="location_sub">Finden Sie uns in Winsen (Luhe) und Umgebung.</p>
         </div>
 
-        <div class="map-wrap">
-          <iframe
-            src="https://www.google.com/maps?q=Winsen%20(Luhe),%20Germany&z=12&output=embed"
-            width="100%"
-            height="420"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Google Maps Standort Lina Elektrotechnik">
-          </iframe>
+        <div class="location-grid">
+          <div class="location-card">
+            <h3 data-i18n="location_info_title">Standortinfo</h3>
+
+            <div class="location-row">
+              <span class="location-label" data-i18n="location_city_label">Ort</span>
+              <span class="location-value">Winsen (Luhe), Deutschland</span>
+            </div>
+
+            <div class="location-row">
+              <span class="location-label" data-i18n="location_service_area_label">Einsatzgebiet</span>
+              <span class="location-value" data-i18n="location_service_area_value">Hamburg & Umgebung</span>
+            </div>
+
+            <div class="location-row">
+              <span class="location-label" data-i18n="contact_phone_label">Telefon</span>
+              <span class="location-value"><a class="link" href="tel:+4915736582225">+49 157 36582225</a></span>
+            </div>
+
+            <div class="location-actions">
+              <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Winsen+(Luhe),+Germany" target="_blank" rel="noopener" data-i18n="location_map_btn">Google Maps öffnen</a>
+            </div>
+          </div>
+
+          <div class="map-card">
+            <iframe
+              src="https://www.google.com/maps?q=Winsen%20(Luhe),%20Germany&z=12&output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lina Elektrotechnik Standort">
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -314,16 +338,14 @@
     <section class="section alt" id="contact">
       <div class="container contact-grid">
         <div>
-          <h2>Kontakt</h2>
-          <p class="muted">
-            Schreiben Sie uns kurz Ihr Anliegen – wir melden uns so schnell wie möglich zurück.
-          </p>
+          <h2 data-i18n="contact_title">Kontakt</h2>
+          <p class="muted" data-i18n="contact_sub">Schreiben Sie uns kurz Ihr Anliegen – wir melden uns schnell zurück.</p>
 
           <div class="contact-cards">
             <div class="contact-card">
               <div class="cc-ico">👷‍♂️</div>
               <div>
-                <div class="cc-label">Ansprechpartner</div>
+                <div class="cc-label" data-i18n="contact_person_label">Ansprechpartner</div>
                 <div class="cc-value">Babiker Ibrahim</div>
               </div>
             </div>
@@ -331,7 +353,7 @@
             <div class="contact-card">
               <div class="cc-ico">📞</div>
               <div>
-                <div class="cc-label">Telefon</div>
+                <div class="cc-label" data-i18n="contact_phone_label">Telefon</div>
                 <div class="cc-value"><a class="link" href="tel:+4915736582225">+49 157 36582225</a></div>
               </div>
             </div>
@@ -339,8 +361,8 @@
             <div class="contact-card">
               <div class="cc-ico">📍</div>
               <div>
-                <div class="cc-label">Standort</div>
-                <div class="cc-value">Winsen (Luhe)</div>
+                <div class="cc-label" data-i18n="contact_location_label">Standort</div>
+                <div class="cc-value" data-i18n="contact_location_value">Winsen (Luhe)</div>
               </div>
             </div>
           </div>
@@ -349,55 +371,53 @@
         <form class="form" id="contactForm">
           <div class="row">
             <label class="field">
-              <span>Name</span>
+              <span data-i18n="form_name">Name</span>
               <input type="text" name="name" placeholder="Max Mustermann" required />
             </label>
 
             <label class="field">
-              <span>Telefon</span>
+              <span data-i18n="form_phone">Telefon</span>
               <input type="tel" name="phone" placeholder="+49 ..." />
             </label>
           </div>
 
           <label class="field">
-            <span>E-Mail</span>
+            <span data-i18n="form_email">E-Mail</span>
             <input type="email" name="email" placeholder="name@email.de" required />
           </label>
 
           <label class="field">
-            <span>Leistung</span>
+            <span data-i18n="form_service">Leistung</span>
             <select name="service" required>
-              <option value="">Bitte auswählen…</option>
-              <option value="Elektroinstallationen">Elektroinstallationen</option>
-              <option value="Photovoltaik / Wärmepumpe / E-Ladestation">Photovoltaik / Wärmepumpe / E-Ladestation</option>
-              <option value="KNX Smart Home">KNX Smart Home</option>
-              <option value="Zählerschrank / Unterverteilung">Zählerschrank / Unterverteilung</option>
-              <option value="Schaltschrankbau">Schaltschrankbau</option>
-              <option value="Lüftung / Heizung Verkabelung">Lüftung / Heizung Verkabelung</option>
-              <option value="Wartung / Service">Wartung / Service</option>
+              <option value="" data-i18n="select_placeholder">Bitte auswählen…</option>
+              <option value="Elektroinstallationen" data-i18n="opt_1">Elektroinstallationen</option>
+              <option value="PV/Wärmepumpe/E-Ladestation" data-i18n="opt_2">Photovoltaik / Wärmepumpe / E-Ladestation</option>
+              <option value="KNX Smart Home" data-i18n="opt_3">KNX Smart Home</option>
+              <option value="Zählerschrank/Unterverteilung" data-i18n="opt_4">Zählerschrank / Unterverteilung</option>
+              <option value="Schaltschrankbau" data-i18n="opt_5">Schaltschrankbau</option>
+              <option value="Lüftung/Heizung Verkabelung" data-i18n="opt_6">Lüftung / Heizung Verkabelung</option>
+              <option value="Wartung/Service" data-i18n="opt_7">Wartung / Service</option>
             </select>
           </label>
 
           <label class="field">
-            <span>Nachricht</span>
+            <span data-i18n="form_message">Nachricht</span>
             <textarea name="message" rows="6" placeholder="Beschreiben Sie kurz Ihr Projekt..." required></textarea>
           </label>
 
-          <button class="btn primary full" type="submit">Anfrage per E-Mail öffnen</button>
+          <button class="btn primary full" type="submit" data-i18n="form_send">
+            Anfrage per E-Mail öffnen
+          </button>
 
           <div class="footer-mini">
-            <a class="btn ghost full" href="#top">Nach oben</a>
+            <a class="btn ghost full" href="#top" data-i18n="back_top">Nach oben</a>
           </div>
         </form>
       </div>
     </section>
   </main>
 
-  <a
-    class="whatsapp-float"
-    href="https://wa.me/4915736582225?text=Hallo%20Lina%20Elektrotechnik,%20ich%20möchte%20eine%20Anfrage%20stellen."
-    target="_blank"
-    aria-label="WhatsApp öffnen">
+  <a class="whatsapp-float" href="https://wa.me/4915736582225" target="_blank" aria-label="WhatsApp">
     <span>💬</span>
   </a>
 
@@ -408,8 +428,8 @@
           <img src="li.png" alt="Logo" class="footer-logo" />
           <span>Lina Elektrotechnik</span>
         </div>
-        <div class="muted tiny">
-          Meisterbetrieb in Winsen (Luhe) – Elektro, Smart Home, Energie und Service.
+        <div class="muted tiny" data-i18n="footer_text">
+          Meisterbetrieb in Winsen (Luhe) – Elektro, Smart Home, Energie & Service.
         </div>
       </div>
 
