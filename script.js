@@ -301,7 +301,7 @@ ${includeEmail ? `E-Mail: ${email}\n` : ""}${service ? `Leistung: ${service}\n` 
 Nachricht:
 ${message}`;
 
-      window.location.href = `mailto:info@lina-elektrotechnik.de?subject=${subject}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:Babiker12345@yahoo.de?subject=${subject}&body=${encodeURIComponent(body)}`;
     });
   }
 
@@ -314,3 +314,4 @@ ${message}`;
   setLanguage(savedLanguage);
   setTheme(savedTheme);
 });
+
